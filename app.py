@@ -12,7 +12,7 @@ if 'messages' not in st.session_state:
 if 'name' not in st.session_state:
     st.session_state.name = None
 
-st.title("Intelligent Medical Diagnosis and Drug Recommendation")
+st.title("Intelligent Medical Diagnosis and Drug Recommendation System")
 
 # Get user's name if not already provided
 if not st.session_state.name:
