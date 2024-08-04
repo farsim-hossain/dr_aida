@@ -21,9 +21,11 @@ def chat_with_mistral(message, message_history, name):
             "role": "system",
             "content": (
                 f"The user's name is {name}. "
-                "Respond with short sentences and ask one follow-up question at a time to better "
+                "Respond with medium sentences and ask one follow-up question at a time to better "
                 "understand the user's symptoms. Do not number your questions. "
-                "After each question, add: 'If you have no other symptoms, please type \"no more symptoms\".'"
+                
+                
+                "From your second follow-up question, add: 'If you have no other symptoms, please type \"no more symptoms\".'But if you notice that the user is saying something which is not related to health or medical symptoms or disease or if the user writes gibberish, say that 'I do not understand' and do not add the message 'If you have no other symptoms, please type \"no more symptoms\".' until the user tells about his or her medical conditions again"
                 
             )
         }
@@ -34,7 +36,7 @@ def chat_with_mistral(message, message_history, name):
     ]
     
     data = {
-        "model": "mistral-small",
+        "model": "mistral-large-2407",
         "messages": messages
     }
     
