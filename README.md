@@ -8,5 +8,5 @@ Steps to run in your local ;
 - Create a file called '.env'
 - In the .env file create a new variable called `MISTRAL_API_KEY` and paste your Mistral API key. Like this : MISTRAL_API_KEY = your api key here. - Save the file
 - run `pip install -r requirements.txt`
-- run streamlit run app.py
+- run `streamlit run app.py`
 Your app should be running 
