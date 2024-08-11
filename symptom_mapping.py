@@ -7,7 +7,7 @@ nlp = spacy.load("disease_ner_model")
 # Define symptom keywords
 keywords_new = {
     "itching": ["itching", "itch"],
-    "skin_rash": ["skin, "skin rash", "rash"],
+    "skin_rash": ["skin", "skin rash", "rash"],
     "nodal_skin_eruptions": ["nodal", "skin", "eruptions"],
     "continuous_sneezing": ["non stop sneezing", "sneezing"],
     "shivering": ["shivering", "chills", "feel cold", "feling cold"],
